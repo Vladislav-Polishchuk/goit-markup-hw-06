@@ -182,6 +182,7 @@
   width: calc((100% - 72px) / 4);
 }
 
+
 .main-container {
   display: flex;
   align-items: center;
@@ -211,6 +212,12 @@
   color: #434455;
 }
 
+
+
+
+
+
+/* section-team */
 .section-three {
   background: #f4f4fd;
   padding-top: 120px;
@@ -315,6 +322,29 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* stction-four */
 
 .section-four {
   padding-top: 120px;
