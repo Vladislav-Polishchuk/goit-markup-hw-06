@@ -428,7 +428,7 @@
 
 
 
-
+/* Секція футер */
 
 
 .footer {
@@ -609,6 +609,10 @@
   fill: #fff;
   margin-left: 16px
 }
+
+
+/* Модульний контейнер  */
+
 
 .modal-window-container {
   position: fixed;
