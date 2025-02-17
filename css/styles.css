@@ -443,7 +443,6 @@ h6 {
         background-position: center;
         padding-top: 112px;
         padding-bottom: 112px;
-        margin-bottom: 96px;
     }
 
 
@@ -502,9 +501,7 @@ h6 {
     display: none;
 }
 
-.main-list {
-    width: 288px;
-}
+
 
 .main-list-one {
     width: 288px;
@@ -552,28 +549,31 @@ h6 {
 
     .main-section {
         padding-bottom: 96px;
+        padding-top: 96px;
     }
 
+    @media screen and (max-width: 1157px) {
 
+        .main-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 72px 24px;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-direction: row;
+        }
 
-    .main-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 72px 24px;
-        justify-content: space-between;
-        align-items: baseline;
-        flex-direction: row;
+        .main-list-one {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+
+            min-width: 356px;
+            width: calc((100% - 24px) / 2);
+        }
     }
 
-    .main-list-one {
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex-direction: column;
-        gap: 8px;
-        min-width: 356px;
-        width: calc((100% - 24px) / 2);
-    }
 
 
 
