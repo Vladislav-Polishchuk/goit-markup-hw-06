@@ -114,7 +114,7 @@ h6 {
 .burger-btn {
     padding: 0;
     border: none;
-    border-color: transparent;
+    background-color: transparent;
 }
 
 .burger-icon {
@@ -445,6 +445,13 @@ h6 {
         padding-bottom: 112px;
     }
 
+    .header-text-portfolio {
+        color: #2e2f42;
+    }
+
+    .header-text-contacts {
+        color: #2e2f42;
+    }
 
     .main-cont-hero {
         display: flex;
@@ -495,6 +502,7 @@ h6 {
 
 .main-section {
     padding-bottom: 96px;
+    padding-top: 96px;
 }
 
 .main-container {
@@ -619,6 +627,9 @@ h6 {
         letter-spacing: 0.02em;
         color: #2e2f42;
         margin-bottom: 8px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
 
     .section-two-p {
@@ -975,11 +986,12 @@ h6 {
 
 @media screen and (min-width: 768px) {
 
-    .sect-parag {
-        display: none;
-    }
 
     @media (min-width: 768px) and (max-width: 1157px) {
+
+        .sect-parag {
+            display: none;
+        }
 
         .section-four-list {
             display: flex;
@@ -1000,20 +1012,125 @@ h6 {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 4 секція где много фото для компа */
 
-@media screen and (min-width: 1158px) {
+.section-four {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
-    .section-four {
-        padding-top: 120px;
-        padding-bottom: 120px;
+.section-three-h {
+    margin-bottom: 72px;
+}
 
+.section-four-list {
+    display: flex;
+
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.section-list {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 360px;
+    height: 300px;
+    background-color: #4d5ae5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    transition: top 0.3s ease;
+    box-sizing: border-box;
+}
+
+.overlay-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+}
+
+/* Медіа-запит для планшетів (ширина екрану від 768px до 1157px) */
+@media (max-width: 1157px) {
+    .overlay {
+        width: 360px;
+        height: 300px;
+        padding: 32px 40px;
     }
 
-    .section-list {
-        width: calc((100% - 48px) / 3);
+    .overlay-text {
+        font-size: 15px;
     }
 }
+
+/* Медіа-запит для мобільних пристроїв (ширина екрану до 767px) */
+@media (max-width: 767px) {
+    .overlay {
+        width: 320px;
+        height: 300px;
+        padding: 20px;
+    }
+
+    .overlay-text {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 1158px) {
+    .overlay {
+        width: 360px;
+        height: 300px;
+        padding: 40px 32px;
+    }
+}
+
+.section-list:hover .overlay,
+.section-list:focus .overlay {
+    top: 0;
+
+}
+
+.sect-parag {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1059,6 +1176,7 @@ h6 {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+
     .footer-forms-form {
         display: flex;
         flex-direction: column;
@@ -1073,6 +1191,10 @@ h6 {
         flex-direction: column;
         margin-bottom: 72px;
 
+    }
+
+    .footer-forms-label {
+        margin-bottom: 16px;
     }
 
     .footer-div-container {
@@ -1142,12 +1264,6 @@ h6 {
     color: #fff;
 }
 
-.footer-forms-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
 
 
@@ -1163,11 +1279,10 @@ h6 {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: #ffffff;
+
 }
 
-.footer-forms-input-mob {
-    margin-bottom: 16px;
-}
+
 
 .footer-forms-input::placeholder {
     color: #ffffff;
