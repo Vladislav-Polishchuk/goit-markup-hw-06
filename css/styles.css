@@ -394,12 +394,15 @@ h6 {
 
 }
 
-.main-cont-hero {
-    width: 216px;
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    flex-direction: column;
+@media screen and (max-width: 767px) {
+    .main-cont-hero {
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        flex-direction: column;
+        width: 216px;
+    }
+
 }
 
 .main-text-hero {
